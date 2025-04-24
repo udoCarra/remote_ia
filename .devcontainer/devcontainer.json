@@ -1,0 +1,15 @@
+{
+	"name": "Python 3",
+	"dockerComposeFile": "../docker-compose.yml",
+	"workspaceFolder": "/app",  // Répertoire de travail à l'intérieur du conteneur
+	"service": "django",  // Le nom du service dans le docker-compose.yml
+	"remoteUser": "root",
+	"settings": {
+		"terminal.integrated.defaultProfile.linux": "bash"
+	  },
+	  "extensions": [
+		"ms-python.python"
+	  ],
+	// Si vous avez besoin de redémarrer le conteneur ou d'exécuter des commandes supplémentaires après la création du conteneur,
+	// vous pouvez les ajouter ici.
+}

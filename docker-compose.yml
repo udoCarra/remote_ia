@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  django:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    container_name: django-container
+    ports:
+      - "50005:50005"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    tty: true
+
+    #command: python manage.py runserver 0.0.0.0:50005
